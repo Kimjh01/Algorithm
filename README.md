@@ -1,2 +1,70 @@
-# Algorithm
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# 📘Algorithm
+
+이 저장소는 **BaekjoonHub**를 이용하여 백준 및 프로그래머스에서 푼 알고리즘 문제들을 정리한 공간입니다.  
+문제는 **C++17**과 **Python**으로 풀이하며, 아래와 같은 순서와 폴더 구조를 따릅니다.
+
+---
+
+##  진행 순서
+
+1.  [Baekjoon Online Judge](https://www.acmicpc.net/)
+   -  Class 1
+   -  Class 2
+   -  Class 3
+   -  Class 4
+2.  [Programmers](https://programmers.co.kr/)
+   -  Level 1
+   - ⏳ Level 2, 3 확장 예정
+
+---
+
+## 📂 폴더 구조
+
+```
+
+Algorithm/
+├── C++17/
+│   ├── 백준/
+│   │   ├── Bronze/
+│   │   │   └── 1000\_A+B.cpp
+│   │   ├── Silver/
+│   │   └── ...
+│   └── 프로그래머스/
+│       └── Level1/
+│           └── 두\_정수\_사이의\_합.cpp
+
+├── Python/
+│   ├── 백준/
+│   │   ├── Bronze/
+│   │   │   └── 1000\_A+B.py
+│   │   ├── Silver/
+│   │   └── ...
+│   └── 프로그래머스/
+│       └── Level1/
+│           └── 두\_정수\_사이의\_합.py
+
+```
+
+---
+
+## 🛠 사용 도구 및 환경
+
+- 💻 언어: `C++17`, `Python 3`
+- 🔧 업로드 자동화: [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub)
+- 📝 IDE: VSCode / CLion / Jupyter 등
+
+---
+
+## 🔖 커밋 컨벤션
+
+- `feat: [BOJ/C++17] 1000 A+B 문제 풀이`
+- `feat: [PGMS/Python] 두 정수 사이의 합 문제 풀이`
+
+---
+
+꾸준히 기록하며 성장하는 개발자가 되겠습니다!  
+감사합니다 😊
+```
+
+
+
