@@ -1,9 +1,7 @@
-max = 0
+num=[]
 for i in range(9):
-    num = int(input())
-    if max < num:
-        max = num
-        idx = i
+    num.append(int(input()))
         
-print(max)
-print(idx+1)
+temp = max(num)
+print(temp)
+print(num.index(temp)+1)
