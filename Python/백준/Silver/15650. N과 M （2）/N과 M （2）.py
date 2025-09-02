@@ -1,13 +1,9 @@
+from itertools import combinations
+
 N, M = map(int, input().split())
-arr = []
 
-def dfs(start):
-    if len(arr) == M:
-        print(*arr)
-        return
-    for x in range(start, N+1):
-        arr.append(x)
-        dfs(x+1)
-        arr.pop()
+arr = [ _ for _ in range(1, N+1)]
+result = list(combinations(arr, M))
 
-dfs(1)
+for row in result:
+    print(*row)
