@@ -1,10 +1,14 @@
-from itertools import product
-
 N, M = map(int, input().split())
+arr = sorted(set(map(int, input().split())))
+result = []
 
-arr = sorted(list(map(int, input().split())))
-
-result = sorted(list(set(product(arr, repeat=M))))
-
-for row in result:
-    print(*row)
+def dfs():
+    if len(result) == M:
+        print(*result)
+        return
+    for y in range(len(arr)):
+        result.append(arr[y])
+        dfs()  
+        result.pop()
+        
+dfs()
