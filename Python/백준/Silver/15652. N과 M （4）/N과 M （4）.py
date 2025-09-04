@@ -1,10 +1,13 @@
-from itertools import combinations_with_replacement
-
-
 N, M = map(int, input().split())
+arr = []
 
-arr = [ _ for _ in range(1, N+1)]
-result = list(combinations_with_replacement(arr, M))
+def dfs(x):
+    if len(arr) == M:
+        print(*arr)
+        return
+    for y in range(x, N+1):
+        arr.append(y)
+        dfs(y)  
+        arr.pop()
 
-for row in result:
-    print(*row)
+dfs(1)
