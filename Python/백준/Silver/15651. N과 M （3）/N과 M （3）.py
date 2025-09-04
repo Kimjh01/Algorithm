@@ -1,9 +1,13 @@
-from itertools import product
-
 N, M = map(int, input().split())
+arr = []
 
-arr = [ _ for _ in range(1, N+1)]
-result = list(product(arr, repeat=M))
+def dfs():
+    if len(arr) == M:
+        print(*arr)
+        return
+    for x in range(1, N+1):
+        arr.append(x)
+        dfs()  
+        arr.pop()
 
-for row in result:
-    print(*row)
+dfs()
