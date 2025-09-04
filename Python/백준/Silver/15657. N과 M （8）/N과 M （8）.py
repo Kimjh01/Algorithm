@@ -1,10 +1,14 @@
-from itertools import combinations_with_replacement
-
 N, M = map(int, input().split())
-
 arr = sorted(list(map(int, input().split())))
+result = []
 
-result = list(combinations_with_replacement(arr, M))
-
-for row in result:
-    print(*row)
+def dfs(x):
+    if len(result) == M:
+        print(*result)
+        return
+    for y in range(x, N):
+        result.append(arr[y])
+        dfs(y)  
+        result.pop()
+        
+dfs(0)
