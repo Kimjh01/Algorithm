@@ -2,12 +2,6 @@
 
 이 저장소는 **BaekjoonHub**를 이용하여 백준 및 프로그래머스에서 푼 알고리즘 문제들을 정리한 공간입니다.  
 문제는 **C++17**과 **Python**으로 풀이하며, 아래와 같은 순서와 폴더 구조를 따릅니다.
-
-<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-  <!-- 왼쪽 Solved.ac 카드 -->
-  <a href="https://solved.ac/felix3328">
-    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=felix3328" alt="Solved.ac 프로필"/>
-  </a>
    
 ---
 
@@ -63,3 +57,11 @@ Algorithm/
 
 꾸준히 기록하며 성장하는 개발자가 되겠습니다!  
 감사합니다 😊
+
+### Python
+
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+  <!-- 왼쪽 Solved.ac 카드 -->
+  <a href="https://solved.ac/felix3328">
+    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=felix3328" alt="Solved.ac 프로필"/>
+  </a>
