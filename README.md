@@ -24,14 +24,14 @@
 
 Algorithm/
 ├── Python/
-│   ├── 백준/
-│   │   ├── Bronze/
-│   │   │   └── 1000\_A+B.py
-│   │   ├── Silver/
-│   │   └── ...
-│   └── 프로그래머스/
-│       └── Level1/
-│           └── 두_정수_사이의_합.py
+    ├── 백준/
+    │   ├── Bronze/
+    │   │   └── 1000\_A+B.py
+    │   ├── Silver/
+    │   └── ...
+    └── 프로그래머스/
+        └── Level1/
+            └── 두_정수_사이의_합.py
 
 ```
 
@@ -41,7 +41,7 @@ Algorithm/
 
 - 💻 언어: `Python 3`
 - 🔧 업로드 자동화: [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub)
-- 📝 IDE: VSCode / CLion / Jupyter 등
+- 📝 IDE: VSCode / Pycharm / Jupyter 등
 
 ---
 
