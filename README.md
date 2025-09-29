@@ -1,7 +1,7 @@
 # 📘Algorithm
 
 이 저장소는 **BaekjoonHub**를 이용하여 백준 및 프로그래머스에서 푼 알고리즘 문제들을 정리한 공간입니다.  
-문제는 **C++17**과 **Python**으로 풀이하며, 아래와 같은 순서와 폴더 구조를 따릅니다.
+문제는 **Python**으로 풀이하며, 아래와 같은 순서와 폴더 구조를 따릅니다.
    
 ---
 
@@ -23,16 +23,6 @@
 ```
 
 Algorithm/
-├── C++17/
-│   ├── 백준/
-│   │   ├── Bronze/
-│   │   │   └── 1000\_A+B.cpp
-│   │   ├── Silver/
-│   │   └── ...
-│   └── 프로그래머스/
-│       └── Level1/
-│           └── 두_정수_사이의_합.cpp
-
 ├── Python/
 │   ├── 백준/
 │   │   ├── Bronze/
@@ -49,7 +39,7 @@ Algorithm/
 
 ## 🛠 사용 도구 및 환경
 
-- 💻 언어: `C++17`, `Python 3`
+- 💻 언어: `Python 3`
 - 🔧 업로드 자동화: [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub)
 - 📝 IDE: VSCode / CLion / Jupyter 등
 
