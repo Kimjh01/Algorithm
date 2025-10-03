@@ -72,8 +72,6 @@ Algorithm/
 꾸준히 기록하며 성장하는 개발자가 되겠습니다!
 감사합니다 😊
 
----
-
 ## Solved.ac Profiles
 
 <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
