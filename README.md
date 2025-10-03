@@ -1,12 +1,7 @@
-
----
-
 # 📘 Algorithm
 
 이 저장소는 **BaekjoonHub**를 이용하여 백준 및 프로그래머스에서 푼 알고리즘 문제들을 정리한 공간입니다.
 문제는 **Python**과 **C++** 두 언어로 풀이하며, 아래와 같은 순서와 폴더 구조를 따릅니다.
-
----
 
 ## 📌 진행 순서
 
@@ -21,8 +16,6 @@
 
    * Level 1
    * ⏳ Level 2, 3 확장 예정
-
----
 
 ## 📂 폴더 구조
 
@@ -69,10 +62,9 @@ Algorithm/
 
 ---
 
-꾸준히 기록하며 성장하는 개발자가 되겠습니다!
-감사합니다 😊
+꾸준히 기록하며 성장하는 개발자가 되겠습니다! 감사합니다 😊
 
-## Solved.ac Profiles
+- Solved.ac Profiles
 
 <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
   <!-- Python Solved.ac -->
