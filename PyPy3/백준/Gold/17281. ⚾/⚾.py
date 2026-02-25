@@ -1,50 +1,60 @@
 import sys
 from itertools import permutations
+
 input = sys.stdin.readline
 
 N = int(input().strip())
-results = [list(map(int, input().split())) for _ in range(N)]
 
-def simulate(order):
+match = []
+for _ in range(N):
+    match.append(list(map(int, input().split())))
+
+players = list(range(1, 9))  
+
+def try_game(order):
     score = 0
-    batter_idx = 0  
+    batter = 0  
 
     for inning in range(N):
         outs = 0
-        b1 = b2 = b3 = 0 
+        bases = 0  
 
         while outs < 3:
-            player = order[batter_idx]      
-            outcome = results[inning][player]
-            batter_idx = (batter_idx + 1) % 9
+            p = order[batter]
+            batter += 1
+            if batter == 9:
+                batter = 0
 
-            if outcome == 0:  # 아웃
+            r = match[inning][p]
+
+            if r == 0:
                 outs += 1
-            elif outcome == 1:  
-                score += b3
-                b3, b2, b1 = b2, b1, 1
-            elif outcome == 2:
-                score += b3 + b2
-                b3, b2, b1 = b1, 1, 0
-            elif outcome == 3: 
-                score += b3 + b2 + b1
-                b3, b2, b1 = 1, 0, 0
+            elif r == 4:
+                score += bases.bit_count() + 1
+                bases = 0
             else:
-                score += b3 + b2 + b1 + 1
-                b1 = b2 = b3 = 0
+                nxt_base = bases << r
+                score += (nxt_base >> 3).bit_count()
+                bases = nxt_base & 7
+                bases |= 1 << (r - 1)
+
     return score
 
-best = 0
-players = [i for i in range(1, 9)] 
+ans = 0
+
 for perm in permutations(players, 8):
     order = [0] * 9
-    order[3] = 0  
-    pi = 0
-    for i in range(9):
-        if i == 3:
-            continue
-        order[i] = perm[pi]
-        pi += 1
-    best = max(best, simulate(order))
+    order[3] = 0 
 
-print(best)
+    pi = 0
+    for pos in range(9):
+        if pos == 3:
+            continue
+        order[pos] = perm[pi]
+        pi += 1
+
+    s = try_game(order)
+    if s > ans:
+        ans = s
+
+print(ans)
